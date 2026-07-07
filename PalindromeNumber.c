@@ -1,5 +1,5 @@
-#include<stdio.h>
 #include<stdlib.h>
+#include<stdio.h>
 #include<stdbool.h>
 
 bool isPalindrome(int x){
@@ -33,13 +33,14 @@ bool isPalindrome(int x){
         backIdx = backIdx - 1;
     }
     return true;
+
 }
 int main(){
     printf("Input: ");
     int x;
-    scanf("%d",&x);
+    scanf("%d", &x);
     bool result = isPalindrome(x);
-    if (result == true){
+    if(result == true){
         printf("Output: true");
     }else{
         printf("Output: false");
